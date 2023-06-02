@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.game_name {
+  padding: 30px 0;
+}
+
+button {
+  width: 60%;
+  font-size: 18px;
+  font-weight: 60;
+  border-radius: 10px;
+}
+
+button,
+.color-pick {
+  padding: 10px;
+  transition: transform 0.1s;
+}
+
+button:hover,
+.color-pick:hover {
+  transform: scale(1.3);
+}
+
+.active {
+  background-color: darkslategrey;
+  color: #ffffff;
+}
+
+.main.container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.game_name {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  font-size: 80px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 152px;
+  /* border: 1px solid black; */
+  row-gap: 45px;
+  width: 250px;
+  /* height: 960px; */
+}
+
+.color-pick {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+input[type="color"] {
+  width: 100%;
+  height: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001a;
+  transform: scale(1.5);
+}
+
+.game_grid {
+  display: grid;
+  /* grid-gap: 1px; */
+  justify-content: center;
+  /* align-items: stretch; */
+  width: 960px;
+  height: 960px;
+  border: 1px solid black;
+}
+
+.block {
+  /* width: 25px;
+  height: 25px; */
+  border: 1px solid black;
+}
+
+.range-slider {
+  margin-top: 20px;
+}
+
+.rs-value {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
